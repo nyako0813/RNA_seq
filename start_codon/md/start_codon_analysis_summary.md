@@ -10,7 +10,7 @@ NCBI RefSeqアノテーション(GCF_000007345.1)における *Methanosarcina ac
 |---|---|
 | GFFアノテーション | `start_codon/data/methanosarcina_acetivorans/ncbi_dataset/data/GCF_000007345.1/genomic.gff` |
 | ゲノムFASTA | `rnaseq_requantification/genome/NC_003552.1.fna` |
-| RNA-seq BAM | `rnaseq_requantification/bam/` 配下6サンプル(メタノール源・酢酸源条件、意図的に絞り込み済み) |
+| RNA-seq BAM | `rnaseq_requantification/bam/` 配下6サンプル。元は炭素源(酢酸/メタノール)×呼吸条件(humus-respiratory/no-respiratory)の計4条件・11サンプルが存在するが、現在は`no-respiratory`条件2種(acetate×3, methanol×3)のみが残っており、`humus-respiratory`条件2種(acetate×3, methanol×2)は意図的に削除済み(§8参照) |
 | オルソログ蛋白質DB | Methanosarcina属6種(*M. mazei, M. barkeri, M. thermophila, M. vacuolata, M. siciliae, M. horonobensis*、*M. acetivorans*自身は除く)の`protein.faa`を連結、21,734配列。`makeblastdb`でBLAST DB化。 |
 
 ## 3. 手法
@@ -99,4 +99,4 @@ RNA-seqとBLASTが異なる候補を支持する34件について、`samtools de
 
 - 判断保留として残る22件は、RNA-seqとBLASTの証拠だけでは確定できない。5'RACEやN末端シークエンシング等の実験的検証が次のステップとして妥当。
 - 非正準開始コドンで「支持」と判定された95件のうち、上位15件(BLAST同一性順)のみ簡易チェック済み(14/15でBLAST qstart=1、N末端一致を確認)。残り80件は未チェック。
-- RNA-seq BAMはメタノール源・酢酸源の6サンプルのみを使用(意図的な絞り込みであることを確認済み)。他の培養条件のデータを追加すれば、判断保留ケースの一部は解消する可能性がある。
+- **RNA-seq BAMは11サンプル中6サンプルのみを使用**。元々の実験デザインは炭素源(酢酸/メタノール)×呼吸条件(humus-respiratory/no-respiratory)の計4条件・11サンプルだが、現在残っているのは`no-respiratory`条件2種(acetate_no-respiratory×3, methanol_no-respiratory×3)の全6サンプルのみで、`humus-respiratory`条件2種(acetate_humus-respiratory×3, methanol_humus-respiratory×2)の計5サンプルは削除されている。この削除は意図的なものであることを確認済みだが、**炭素源ではなく「呼吸条件」の軸が丸ごと欠落している**点に注意。`humus-respiratory`条件下でのみ発現する遺伝子があれば、その開始点候補は今回のRNA-seq証拠では原理上検出できず、判断保留22件の一部はこれが原因の可能性がある。追加サンプルを取得できれば解消する見込み。
