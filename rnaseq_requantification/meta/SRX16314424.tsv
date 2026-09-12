@@ -1,0 +1,2 @@
+run_accession	fastq_ftp	fastq_bytes	library_layout	library_strategy	sample_accession	study_accession	read_count	base_count
+SRR20280860	ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/060/SRR20280860/SRR20280860_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/060/SRR20280860/SRR20280860_2.fastq.gz	2623307339;2813199627	PAIRED	RNA-Seq	SAMN29787779	PRJNA859536	46324814	13641061823

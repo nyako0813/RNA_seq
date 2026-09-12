@@ -1,0 +1,31 @@
+# Large raw/intermediate data kept locally only (multi-GB; not suited to git)
+rnaseq_requantification/bam/
+rnaseq_requantification/fastq/
+rnaseq_requantification/tools/
+rnaseq_requantification/genome/*.fna
+rnaseq_requantification/genome/*.amb
+rnaseq_requantification/genome/*.ann
+rnaseq_requantification/genome/*.bwt
+rnaseq_requantification/genome/*.pac
+rnaseq_requantification/genome/*.sa
+
+# NCBI datasets download (genome/protein FASTA, GFF) - large, re-downloadable
+start_codon/data/methanosarcina_acetivorans/
+
+# BLAST databases and ortholog FASTA (large, reproducible via scripts)
+start_codon/mini_test/orthologs_methanosarcina.faa*
+start_codon/full_run/orthologs_methanosarcina.faa*
+
+# Per-run scratch/work directories
+start_codon/mini_test/.fsc_work/
+start_codon/full_run/.fsc_work/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# WSL/Windows alternate-data-stream marker files
+*:Zone.Identifier
+
+# Claude Code harness session state (not project content)
+.claude/

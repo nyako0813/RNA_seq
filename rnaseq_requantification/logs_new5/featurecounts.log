@@ -1,0 +1,84 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.1.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 5 BAM files                                      ||
+||                                                                            ||
+||                           SRR20281612.sorted.bam                           ||
+||                           SRR20281613.sorted.bam                           ||
+||                           SRR20650029.sorted.bam                           ||
+||                           SRR20650030.sorted.bam                           ||
+||                           SRR20650031.sorted.bam                           ||
+||                                                                            ||
+||             Output file : counts_new5.txt                                  ||
+||                 Summary : counts_new5.txt.summary                          ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : no                                               ||
+||              Annotation : genomic.gff (GTF)                                ||
+||      Dir for temp files : counts                                           ||
+||                                                                            ||
+||                 Threads : 8                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file genomic.gff ...                                       ||
+||    Features : 4770                                                         ||
+||    Meta-features : 4770                                                    ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file SRR20281612.sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 44196933                                             ||
+||    Successfully assigned alignments : 38086590 (86.2%)                     ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file SRR20281613.sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 44609270                                             ||
+||    Successfully assigned alignments : 40223013 (90.2%)                     ||
+||    Running time : 0.08 minutes                                             ||
+||                                                                            ||
+|| Process BAM file SRR20650029.sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 48023983                                             ||
+||    Successfully assigned alignments : 47120630 (98.1%)                     ||
+||    Running time : 0.08 minutes                                             ||
+||                                                                            ||
+|| Process BAM file SRR20650030.sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 46353782                                             ||
+||    Successfully assigned alignments : 45593363 (98.4%)                     ||
+||    Running time : 0.08 minutes                                             ||
+||                                                                            ||
+|| Process BAM file SRR20650031.sorted.bam...                                 ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 44435502                                             ||
+||    Successfully assigned alignments : 43760908 (98.5%)                     ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "counts/counts_new5.txt.  ||
+|| summary"                                                                   ||
+||                                                                            ||
+\\============================================================================//
+

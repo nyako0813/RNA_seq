@@ -1,0 +1,27 @@
+=== Mapping-rate summary (from samtools flagstat) ===
+     sample  total  mapped_pct  properly_paired_pct  total_alignments
+SRR20281608    NaN         NaN                  NaN               NaN
+SRR20281609    NaN         NaN                  NaN               NaN
+SRR20281610    NaN         NaN                  NaN               NaN
+SRR20281611    NaN       98.22                97.42        61049409.0
+SRR20280855    NaN         NaN                  NaN               NaN
+SRR20280860    NaN         NaN                  NaN               NaN
+SRR20281612    NaN       97.41                96.66        44196933.0
+SRR20281613    NaN       97.65                96.54        44609270.0
+SRR20650029    NaN       99.55                91.45        48023983.0
+SRR20650030    NaN       99.60                93.92        46353782.0
+SRR20650031    NaN       99.55                94.21        44435502.0
+
+=== Within-condition replicate correlation (Pearson, log2(TPM+1)) ===
+
+-- acetate_no-respiratory (611/612/613) --
+             SRR20281611  SRR20281612  SRR20281613
+SRR20281611       1.0000       0.9976       0.9888
+SRR20281612       0.9976       1.0000       0.9876
+SRR20281613       0.9888       0.9876       1.0000
+
+-- methanol_no-respiratory (029/030/031) --
+             SRR20650029  SRR20650030  SRR20650031
+SRR20650029       1.0000       0.9723       0.9827
+SRR20650030       0.9723       1.0000       0.9783
+SRR20650031       0.9827       0.9783       1.0000

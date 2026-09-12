@@ -1,0 +1,12 @@
+SRR20281611 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/011/SRR20281611/SRR20281611_1.fastq.gz
+SRR20281611 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/011/SRR20281611/SRR20281611_2.fastq.gz
+SRR20281610 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/010/SRR20281610/SRR20281610_1.fastq.gz
+SRR20281610 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/010/SRR20281610/SRR20281610_2.fastq.gz
+SRR20281608 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/008/SRR20281608/SRR20281608_1.fastq.gz
+SRR20281608 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/008/SRR20281608/SRR20281608_2.fastq.gz
+SRR20280855 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/055/SRR20280855/SRR20280855_1.fastq.gz
+SRR20280855 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/055/SRR20280855/SRR20280855_2.fastq.gz
+SRR20280860 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/060/SRR20280860/SRR20280860_1.fastq.gz
+SRR20280860 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/060/SRR20280860/SRR20280860_2.fastq.gz
+SRR20281609 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/009/SRR20281609/SRR20281609_1.fastq.gz
+SRR20281609 https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR202/009/SRR20281609/SRR20281609_2.fastq.gz

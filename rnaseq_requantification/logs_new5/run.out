@@ -1,0 +1,120 @@
+2026-09-11 21:37:18 [SRR20281612] === start ===
+2026-09-11 21:37:18 [SRR20281612] fastq already present, skipping fasterq-dump
+2026-09-11 21:37:18 [SRR20281612] bwa mem started
+[bam_sort_core] merging from 1 files and 16 in-memory blocks...
+2026-09-11 21:41:00 [SRR20281612] alignment done
+44196933 + 0 in total (QC-passed reads + QC-failed reads)
+44011312 + 0 primary
+0 + 0 secondary
+185621 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+43053785 + 0 mapped (97.41% : N/A)
+42868164 + 0 primary mapped (97.40% : N/A)
+44011312 + 0 paired in sequencing
+22005656 + 0 read1
+22005656 + 0 read2
+42543104 + 0 properly paired (96.66% : N/A)
+42851244 + 0 with itself and mate mapped
+16920 + 0 singletons (0.04% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+2026-09-11 21:41:00 [SRR20281612] cleaned up raw fastq/sra
+2026-09-11 21:41:00 [SRR20281612] === end ===
+2026-09-11 21:41:00 [SRR20281613] === start ===
+2026-09-11 21:41:00 [SRR20281613] fasterq-dump started
+2026-09-11 21:45:39 [SRR20281613] fasterq-dump done
+2026-09-11 21:45:39 [SRR20281613] bwa mem started
+[bam_sort_core] merging from 1 files and 16 in-memory blocks...
+2026-09-11 21:49:53 [SRR20281613] alignment done
+44609270 + 0 in total (QC-passed reads + QC-failed reads)
+44356868 + 0 primary
+0 + 0 secondary
+252402 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+43561633 + 0 mapped (97.65% : N/A)
+43309231 + 0 primary mapped (97.64% : N/A)
+44356868 + 0 paired in sequencing
+22178434 + 0 read1
+22178434 + 0 read2
+42820328 + 0 properly paired (96.54% : N/A)
+43293190 + 0 with itself and mate mapped
+16041 + 0 singletons (0.04% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+2026-09-11 21:49:53 [SRR20281613] cleaned up raw fastq/sra
+2026-09-11 21:49:53 [SRR20281613] === end ===
+2026-09-11 21:49:53 [SRR20650029] === start ===
+2026-09-11 21:49:53 [SRR20650029] fasterq-dump started
+2026-09-11 21:53:37 [SRR20650029] fasterq-dump done
+2026-09-11 21:53:37 [SRR20650029] bwa mem started
+[bam_sort_core] merging from 1 files and 16 in-memory blocks...
+2026-09-11 21:57:51 [SRR20650029] alignment done
+48023983 + 0 in total (QC-passed reads + QC-failed reads)
+43776668 + 0 primary
+0 + 0 secondary
+4247315 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+47808346 + 0 mapped (99.55% : N/A)
+43561031 + 0 primary mapped (99.51% : N/A)
+43776668 + 0 paired in sequencing
+21888334 + 0 read1
+21888334 + 0 read2
+40035088 + 0 properly paired (91.45% : N/A)
+43554298 + 0 with itself and mate mapped
+6733 + 0 singletons (0.02% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+2026-09-11 21:57:51 [SRR20650029] cleaned up raw fastq/sra
+2026-09-11 21:57:51 [SRR20650029] === end ===
+2026-09-11 21:57:51 [SRR20650030] === start ===
+2026-09-11 21:57:51 [SRR20650030] fasterq-dump started
+2026-09-11 22:02:08 [SRR20650030] fasterq-dump done
+2026-09-11 22:02:09 [SRR20650030] bwa mem started
+[bam_sort_core] merging from 1 files and 16 in-memory blocks...
+2026-09-11 22:06:20 [SRR20650030] alignment done
+46353782 + 0 in total (QC-passed reads + QC-failed reads)
+43012214 + 0 primary
+0 + 0 secondary
+3341568 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+46170339 + 0 mapped (99.60% : N/A)
+42828771 + 0 primary mapped (99.57% : N/A)
+43012214 + 0 paired in sequencing
+21506107 + 0 read1
+21506107 + 0 read2
+40397338 + 0 properly paired (93.92% : N/A)
+42822764 + 0 with itself and mate mapped
+6007 + 0 singletons (0.01% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+2026-09-11 22:06:20 [SRR20650030] cleaned up raw fastq/sra
+2026-09-11 22:06:20 [SRR20650030] === end ===
+2026-09-11 22:06:20 [SRR20650031] === start ===
+2026-09-11 22:06:20 [SRR20650031] fasterq-dump started
+2026-09-11 22:09:50 [SRR20650031] fasterq-dump done
+2026-09-11 22:09:50 [SRR20650031] bwa mem started
+[bam_sort_core] merging from 1 files and 16 in-memory blocks...
+2026-09-11 22:13:42 [SRR20650031] alignment done
+44435502 + 0 in total (QC-passed reads + QC-failed reads)
+41177920 + 0 primary
+0 + 0 secondary
+3257582 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+44236912 + 0 mapped (99.55% : N/A)
+40979330 + 0 primary mapped (99.52% : N/A)
+41177920 + 0 paired in sequencing
+20588960 + 0 read1
+20588960 + 0 read2
+38791880 + 0 properly paired (94.21% : N/A)
+40973396 + 0 with itself and mate mapped
+5934 + 0 singletons (0.01% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+2026-09-11 22:13:42 [SRR20650031] cleaned up raw fastq/sra
+2026-09-11 22:13:42 [SRR20650031] === end ===
+2026-09-11 22:13:42 ALL 5 SAMPLES PROCESSED

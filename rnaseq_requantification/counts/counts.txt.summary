@@ -1,0 +1,15 @@
+Status	bam/SRR20281608.sorted.bam	bam/SRR20281609.sorted.bam	bam/SRR20281610.sorted.bam	bam/SRR20281611.sorted.bam	bam/SRR20280855.sorted.bam	bam/SRR20280860.sorted.bam
+Assigned	72618505	64246312	49276529	53152714	78967758	80360524
+Unassigned_Unmapped	2281824	26685771	2337789	1086000	1699469	1769800
+Unassigned_Read_Type	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0
+Unassigned_NoFeatures	7467468	7295620	7528916	5593842	7583795	9530823
+Unassigned_Overlapping_Length	0	0	0	0	0	0
+Unassigned_Ambiguity	2114592	1892697	1382535	1216853	1627956	1955567
