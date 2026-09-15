@@ -22,6 +22,7 @@ start_codon/full_run/orthologs_methanosarcina.faa*
 # Per-run scratch/work directories
 start_codon/mini_test/.fsc_work/
 start_codon/full_run/.fsc_work/
+start_codon/full_run/.step9e_work/
 
 # Python cache
 __pycache__/
