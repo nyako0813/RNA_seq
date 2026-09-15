@@ -11,6 +11,9 @@ rnaseq_requantification/genome/*.sa
 
 # NCBI datasets download (genome/protein FASTA, GFF) - large, re-downloadable
 start_codon/data/methanosarcina_acetivorans/
+start_codon/data/GCA_000007345.1_ASM734v1_genomic.fna
+start_codon/data/GCA_000007345.1_ASM734v1_genomic.gff
+start_codon/data/GCF_000007345.1_ASM734v1_genomic.fna
 
 # BLAST databases and ortholog FASTA (large, reproducible via scripts)
 start_codon/mini_test/orthologs_methanosarcina.faa*
@@ -23,6 +26,9 @@ start_codon/full_run/.fsc_work/
 # Python cache
 __pycache__/
 *.pyc
+
+# Stray artifact left by test_find_true_start_codons.py when run outside pytest
+start_codon/fake_blast.tsv
 
 # WSL/Windows alternate-data-stream marker files
 *:Zone.Identifier
