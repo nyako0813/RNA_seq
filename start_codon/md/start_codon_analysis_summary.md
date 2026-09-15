@@ -89,19 +89,19 @@ RNA-seqとBLASTが異なる候補を支持する34件について、`samtools de
 
 ## 7. 成果物一覧
 
-- `start_codon/full_run/full_results.csv` — 全4,683遺伝子の結果
-- `start_codon/full_run/review_candidates.csv` — 現行アノテーションと不一致の1,256件
-- `start_codon/full_run/review_34_final_merged.csv` — 「要確認」34件の最終統合結果(3段階の分析を集約)
-- `start_codon/full_run/noncanonical_support_flagged.csv` — 非正準開始コドンで「支持」判定となった95件
-- `start_codon/full_run/start_codon_full_run_report_v3.xlsx` — 上記全てをまとめたExcelレポート
-- `start_codon/full_run/gca_gcf_comparison.csv` — GCA(2002年GenBank)とGCF(現行RefSeq)の開始位置比較テーブル(§9)
-- `start_codon/full_run/full_results_v2_with_gca.csv` — 全4,683遺伝子にGCA比較結果を統合したもの
-- `start_codon/full_run/gca_flagged_341.csv` / `gca_flagged_850.csv` — GCAと不一致だった「支持」341件・「中確信度」850件の再評価候補(第1段階)
-- `start_codon/full_run/gca_flagged_341_reevaluated.csv` / `gca_flagged_850_reevaluated.csv` — 上記のうちBLAST/RNA-seq新規計算による最終再評価結果(§9-E)
-- `start_codon/full_run/gca_frameshift_genes.csv` — フレームシフト疑い6件の詳細(両読み枠でのBLAST照合結果を含む最終版)
-- `start_codon/full_run/gca_review_34_summary.csv` — 「要確認」34件へのGCA証拠反映結果
+最終的に参照すべきデータ一式は `start_codon/FinalReports/` 配下に整理されている(統合経緯は`start_codon/final_cleanup_instructions.md`、統合スクリプトは`start_codon/finalize_reports.py`を参照)。中間ファイル(`full_run/`配下にあった統合前バージョン)は削除済み。
+
+- `start_codon/FinalReports/full_results_final.csv` — 全4,683遺伝子の結果(GCA比較統合済み最終版)
+- `start_codon/FinalReports/review_34_final.csv` — 「要確認」34件の最終統合結果(3段階の分析+GCA証拠反映を集約)
+- `start_codon/FinalReports/noncanonical_support_flagged.csv` — 非正準開始コドンで「支持」判定となった95件
+- `start_codon/FinalReports/start_codon_full_run_report_v3.xlsx` — 上記(GCA統合前バージョン)をまとめたExcelレポート。GCA比較(§9)は未反映のv3である点に注意
+- `start_codon/FinalReports/gca_gcf_comparison.csv` — GCA(2002年GenBank)とGCF(現行RefSeq)の開始位置比較テーブル(§9)
+- `start_codon/FinalReports/gca_flagged_support_final.csv` — GCAと不一致だった「支持」336件の最終再評価結果(129件の除外理由・207件の新規BLAST/RNA-seq計算結果を統合、§9-E)
+- `start_codon/FinalReports/gca_flagged_medium_final.csv` — GCAと不一致だった「中確信度」849件の最終再評価結果(§9-E)
+- `start_codon/FinalReports/gca_frameshift_final.csv` — フレームシフト疑い6件の詳細(両読み枠でのBLAST照合結果を含む最終版)
 - `start_codon/md/gca_gcf_comparison_report.md` — GCA/GCF比較の詳細レポート
 - `start_codon/resume_gca_gcf_step9e.py` / `test_resume_gca_gcf_step9e.py` — §9-Eの新規BLAST/RNA-seq計算スクリプトと単体テスト
+- `start_codon/finalize_reports.py` — 上記`FinalReports/`の統合ファイル群を生成するスクリプト
 
 ## 8. 未解決事項・今後の課題
 
