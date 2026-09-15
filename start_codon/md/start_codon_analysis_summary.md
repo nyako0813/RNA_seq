@@ -89,19 +89,21 @@ RNA-seqとBLASTが異なる候補を支持する34件について、`samtools de
 
 ## 7. 成果物一覧
 
-最終的に参照すべきデータ一式は `start_codon/FinalReports/` 配下に整理されている(統合経緯は`start_codon/final_cleanup_instructions.md`、統合スクリプトは`start_codon/finalize_reports.py`を参照)。中間ファイル(`full_run/`配下にあった統合前バージョン)は削除済み。
+最終成果物は `start_codon/FinalReports/` に集約されている(2026年9月、最終整理済み)。
 
-- `start_codon/FinalReports/full_results_final.csv` — 全4,683遺伝子の結果(GCA比較統合済み最終版)
-- `start_codon/FinalReports/review_34_final.csv` — 「要確認」34件の最終統合結果(3段階の分析+GCA証拠反映を集約)
-- `start_codon/FinalReports/noncanonical_support_flagged.csv` — 非正準開始コドンで「支持」判定となった95件
-- `start_codon/FinalReports/start_codon_full_run_report_v3.xlsx` — 上記(GCA統合前バージョン)をまとめたExcelレポート。GCA比較(§9)は未反映のv3である点に注意
-- `start_codon/FinalReports/gca_gcf_comparison.csv` — GCA(2002年GenBank)とGCF(現行RefSeq)の開始位置比較テーブル(§9)
-- `start_codon/FinalReports/gca_flagged_support_final.csv` — GCAと不一致だった「支持」336件の最終再評価結果(129件の除外理由・207件の新規BLAST/RNA-seq計算結果を統合、§9-E)
-- `start_codon/FinalReports/gca_flagged_medium_final.csv` — GCAと不一致だった「中確信度」849件の最終再評価結果(§9-E)
+- `start_codon/FinalReports/full_results_final.csv` — 全4,683遺伝子の最終結果(GCA比較結果を統合済み)
+- `start_codon/FinalReports/review_34_final.csv` — 「要確認」34件の最終統合結果(3段階の深掘り分析+GCA証拠反映を統合)
+- `start_codon/FinalReports/gca_flagged_support_final.csv` — 「支持」336件のGCA妥当性チェック+新規BLAST/RNA-seq再評価の統合結果(336行)
+- `start_codon/FinalReports/gca_flagged_medium_final.csv` — 「中確信度」849件のGCA突き合わせ+新規再評価の統合結果(849行)
 - `start_codon/FinalReports/gca_frameshift_final.csv` — フレームシフト疑い6件の詳細(両読み枠でのBLAST照合結果を含む最終版)
+- `start_codon/FinalReports/gca_gcf_comparison.csv` — GCA(2002年GenBank)とGCF(現行RefSeq)の開始位置比較テーブル(§9、4,115件)
+- `start_codon/FinalReports/noncanonical_support_flagged.csv` — 非正準開始コドンで「支持」判定となった95件
+- `start_codon/FinalReports/start_codon_full_run_report_v3.xlsx` — 上記の一部(GCA統合前、v3版)をまとめたExcelレポート。GCA統合後の内容は未反映のため、必要に応じて別途更新予定。
 - `start_codon/md/gca_gcf_comparison_report.md` — GCA/GCF比較の詳細レポート
 - `start_codon/resume_gca_gcf_step9e.py` / `test_resume_gca_gcf_step9e.py` — §9-Eの新規BLAST/RNA-seq計算スクリプトと単体テスト
-- `start_codon/finalize_reports.py` — 上記`FinalReports/`の統合ファイル群を生成するスクリプト
+- `start_codon/finalize_reports.py` — 上記`FinalReports/`統合処理のスクリプト
+
+なお、統合・整理の過程で `full_run/` 配下の中間ファイル(GCA統合前の`full_results.csv`、`review_34_final_merged.csv`の旧分割版、`gca_flagged_341.csv`/`gca_flagged_850.csv`とその再評価版、`gca_frameshift_genes.csv`、`gca_review_34_summary.csv`、`gca_gcf_comparison.csv`)および`review_candidates.csv`は、上記`FinalReports/`側に統合済みのため削除した(git履歴からは復元可能)。
 
 ## 8. 未解決事項・今後の課題
 
@@ -170,9 +172,9 @@ RNA-seq・BLASTに続く第3の証拠源として、*M. acetivorans*の原論文
 | MA_RS10350 | GCA読み枠が妥当 |
 | MA_RS28585, MA_RS28795 | 判断つかない(両読み枠ともBLASTヒットが弱い) |
 
-**「支持」336件中207件**(`gca_flagged_341_reevaluated.csv`): 現行支持のまま86件 / 中確信度相当へ格上げ120件 / 高確信度相当へ格上げ1件。
+**「支持」336件中207件**(`FinalReports/gca_flagged_support_final.csv`): 現行支持のまま86件 / 中確信度相当へ格上げ120件 / 高確信度相当へ格上げ1件。
 
-**「中確信度」849件中119件**(`gca_flagged_850_reevaluated.csv`): 中確信度のまま76件 / 高確信度相当へ格上げ43件。
+**「中確信度」849件中119件**(`FinalReports/gca_flagged_medium_final.csv`): 中確信度のまま76件 / 高確信度相当へ格上げ43件。
 
 なお、GCA(2002年)とBLAST(現代のオルソログ相同性検索)はどちらも相同性ベースの推定であり、完全に独立な証拠ではない点は解釈上留意すること。
 
